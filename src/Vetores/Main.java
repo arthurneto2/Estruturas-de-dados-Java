@@ -25,6 +25,10 @@ public class Main {
 
         System.out.println(vetor.ultimoIndice());
 
+        Integer num = 6;
+        vetor.remove(num);
+        System.out.println(vetor);
+
 
 
 

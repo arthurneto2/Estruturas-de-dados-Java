@@ -47,14 +47,7 @@ public class Vetor<T> {
 
     public void remove(T elemento){
         int posicao = busca(elemento);
-        if(posicao < tamanho && posicao >= 0){
-            if (elementos[posicao] != null) {
-                for (int i = posicao; i < tamanho; i++) {
-                    elementos[i] = elementos[i + 1];
-                }
-            }
-            tamanho--;
-        }
+        remove(posicao);
     }
 
     private void aumentaVetor(){
