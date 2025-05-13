@@ -61,7 +61,7 @@ public class Vetor<T> {
 
     }
 
-    public T busca(int posicao){
+    public T obtem(int posicao){
         if(!(posicao >= 0 && posicao < tamanho )){
             System.out.println("Posição inválida");
         }
