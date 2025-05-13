@@ -1,5 +1,7 @@
 package Vetores;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Vetor<Integer> vetor = new Vetor<>(5);
@@ -34,8 +36,12 @@ public class Main {
         System.out.println(vetor.obtem(2));
 
         //exercício 5
+        vetor.limpar();
+        if (vetor.getTamanho() == 0){
+            System.out.println("Vetor vazio...");
+        }
 
-
+        //exercício 6
 
 
 

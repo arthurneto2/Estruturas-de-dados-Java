@@ -90,6 +90,11 @@ public class Vetor<T> {
         return tamanho - 1;
     }
 
+    public void limpar(){
+        elementos = null;
+        tamanho = 0;
+    }
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
