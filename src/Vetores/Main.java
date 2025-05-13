@@ -1,5 +1,6 @@
 package Vetores;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -42,8 +43,19 @@ public class Main {
         }
 
         //exercício 6
+        Vetor<Contato> vetorContato = new Vetor<>(20);
+        for (int i = 0; i < 30; i++) {
+            vetorContato.adiciona(new Contato());
+        }
+        System.out.println(vetorContato);
 
+        //exercício 7
+        ArrayList<Contato> arrayContato = new ArrayList<>();
+        for (int i = 0; i < vetorContato.getTamanho(); i++) {
+            arrayContato.add(new Contato(vetorContato.obtem(i)));
+        }
 
+        System.out.println(arrayContato);
 
     }
 }

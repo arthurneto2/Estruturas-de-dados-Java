@@ -2,11 +2,16 @@ package Vetores;
 
 
 public class Vetor<T> {
-    private T [] elementos;
+    private T[] elementos;
     private int tamanho;
 
     public Vetor(int capacidade){
         elementos = (T[]) new Object[capacidade];
+        tamanho = 0;
+    }
+
+    public Vetor(){
+        elementos = (T[]) new Object[1];
         tamanho = 0;
     }
 
