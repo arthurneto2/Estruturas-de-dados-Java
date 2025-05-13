@@ -84,6 +84,16 @@ public class Vetor<T> {
         return -1;
     }
 
+    public boolean contains (T elemento){
+        for (T e : elementos){
+            if(elemento.equals(e)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
     @Override
     public String toString() {
