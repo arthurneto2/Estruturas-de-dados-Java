@@ -93,7 +93,9 @@ public class Vetor<T> {
         return false;
     }
 
-
+    public int ultimoIndice(){
+        return tamanho - 1;
+    }
 
     @Override
     public String toString() {
